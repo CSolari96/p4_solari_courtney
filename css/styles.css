@@ -168,26 +168,27 @@ header {
 /* End Navigation */
 /* End Header */
 
-/* Home Page */
+/* Primary Content */
 #banner-img {
 	width: 100%;
 	display: block;
 }
 
-#home {
-	color: #f3f0dd;
-	padding: 2% 0;
-	z-index: 100;
-}
-
-#home h1 {
+h1 {
 	font-size: 3rem;
 	text-align: center;
 }
 
-#home section {
+main section {
 	width: 80%;
 	margin: auto;
+}
+
+/* Home Page */
+#home {
+	color: #f3f0dd;
+	padding: 2% 0;
+	z-index: 100;
 }
 
 #home section img {
@@ -201,6 +202,27 @@ header {
 	padding: 1% 0;
 }
 /* End Home Page */
+
+/* History Page */
+
+/* End History Page */
+
+/* Disciplines Page */
+
+/* End Disciplines Page */
+
+/* Hall of Fame Page*/
+#hof-gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#hof-gallery img {
+	max-width: 310px;
+}
+
+/* End Hall of Fame Page*/
+/* End Primary Content */
 
 /* Min-Width 650px Media Query */
 @media (min-width: 650px) {

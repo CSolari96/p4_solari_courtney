@@ -1,0 +1,10 @@
+$("#wimpy").animatedModal();
+$("#king").animatedModal();
+$("#leo").animatedModal();
+$("#3bars").animatedModal();
+$("#oldsorrel").animatedModal();
+$("#poco").animatedModal();
+$("#doc").animatedModal();
+$("#traveler").animatedModal();
+$("#sanpep").animatedModal();
+$("#skipw").animatedModal();
