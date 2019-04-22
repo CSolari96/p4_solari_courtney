@@ -104,7 +104,6 @@ header {
 .slideout-panel {
   position: relative;
   z-index: 1;
-  will-change: transform;
   background-color: #FFF; /* A background-color is required */
   min-height: 100vh;
 }
@@ -225,7 +224,11 @@ header {
 	header {
 		height: 100%;
 		width: 20%;
-		float: left;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
 	}
 
 	.desktop-menu {
@@ -285,8 +288,7 @@ header {
 
 	/* Primary Content */
 	.right {
-		width: 80%;
-		float: right;
+		padding-left: 20%;
 	}
 }
 /* End Min Width 800 Media Query */
