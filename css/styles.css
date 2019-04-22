@@ -20,6 +20,22 @@ body {
 	font-family: "Monda", sans-serif;
 }
 
+h1, h2, h3 {
+	font-family: "Julius Sans One", sans-serif;
+}
+
+/* For Sticky Footer */
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-content {
+	flex-grow: 1;
+}
+/* End Sticky Footer */
+
 /* Header */
 header {
 	background-color: #f3f0dd;
@@ -151,8 +167,49 @@ header {
 }
 /* End Hamburger Menu */
 /* End Navigation */
-
 /* End Header */
+
+/* Home Page */
+#home {
+	color: #f3f0dd;
+}
+
+#home h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#home img {
+	width: 100%;
+	margin-bottom: 1.5%;
+}
+
+#home section {
+	width: 80%;
+	margin: auto;
+}
+
+#home section img {
+	width: 90%;
+	display: block;
+	margin: 2% auto;
+	max-width: 450px;
+}
+
+#home section p {
+	padding: 1% 0;
+}
+/* End Home Page */
+
+/* Min-Width 650px Media Query */
+@media (min-width: 650px) {
+	#home section img {
+		width: 45%;
+		float: left;
+		margin: 2%;
+	}
+}
+/* End Min-Width 650px Media Query */
 
 /* Min-Width 800px Media Query */
 @media (min-width: 800px) {
@@ -165,10 +222,14 @@ header {
 		display: none;
 	}
 
+	header {
+		height: 100%;
+		width: 20%;
+		float: left;
+	}
+
 	.desktop-menu {
 		display: block;
-		height: 100vh;
-		width: 20%;
 	}
 
 	.desktop-menu img {
@@ -221,5 +282,11 @@ header {
 		color: #d7d4ae;
 	}
 	/* End Navigation and Header */
+
+	/* Primary Content */
+	.right {
+		width: 80%;
+		float: right;
+	}
 }
 /* End Min Width 800 Media Query */
