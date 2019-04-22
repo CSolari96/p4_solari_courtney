@@ -1,3 +1,11 @@
+/* Colors:
+	Light Tan: #f3f0dd;
+	Dark Tan: #d7d4ae;
+	Dark Green/Gray: #716f5a;
+	Orange: #f44237;
+	Turquoise: #0bad92;
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,3 +16,210 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body {
+	font-family: "Monda", sans-serif;
+}
+
+/* Header */
+header {
+	background-color: #f3f0dd;
+	width: 100%;
+}
+
+/* Mobile Header */
+.mobile-header {
+	display: flex;
+}
+
+.mobile-header div {
+	flex-basis: 50px;
+	flex-grow: 1;
+	min-height: 75px;
+}
+
+.light-color {
+	background-color: #f3f0dd;
+}
+
+.medium-color {
+	background-color: #d7d4ae;
+}
+
+.dark-color {
+	background-color: #716f5a;
+}
+
+.orange {
+	background-color: #f44237;
+}
+
+.turquoise {
+	background-color: #0bad92;
+}
+/* End Mobile Header */
+
+/* Navigation */
+.desktop-menu {
+	display: none;
+}
+
+/* Hamburger Menu */
+/* Slideout.js Styles */
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+/* End Slideout.js Styles */
+
+#menu {
+	background-color: #f3f0dd;
+}
+
+#menu img {
+	width: 90%;
+	max-width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+
+#menu ul {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#menu ul li {
+	flex-grow: 1;
+	flex-basis: 120px;
+	margin: 5% 0;
+	padding: 5%;
+}
+
+#menu ul li a:link, #menu ul li a:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#menu ul li.medium-color a:link, #menu ul li.medium-color a:visited {
+	color: #f44237;
+}
+
+#menu ul li.dark-color a:link, #menu ul li.dark-color a:visited {
+	color: #0bad92;
+}
+
+#menu ul li.orange a:link, #menu ul li.orange a:visited {
+	color: #f3f0dd;
+}
+
+#menu ul li.turquoise a:link, #menu ul li.turqoise a:visited {
+	color: #d7d4ae;
+}
+/* End Hamburger Menu */
+/* End Navigation */
+
+/* End Header */
+
+/* Min-Width 800px Media Query */
+@media (min-width: 800px) {
+	/* Navigation and Header */
+	.mobile-header {
+		display: none;
+	}
+
+	.toggle-button {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+		height: 100vh;
+		width: 20%;
+	}
+
+	.desktop-menu img {
+		width: 90%;
+		max-width: 200px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.desktop-menu ul {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.desktop-menu ul li {
+		flex-grow: 1;
+		flex-basis: 120px;
+		margin: 5% 0;
+		padding-left: 15%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.desktop-menu ul li.logo {
+		padding-left: 0;
+	}
+
+	.desktop-menu ul li a:link, .desktop-menu ul li a:visited {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 700;
+		width: 100%;
+	}
+
+	.desktop-menu ul li.medium-color a:link, .desktop-menu ul li.medium-color a:visited {
+		color: #f44237;
+	}
+
+	.desktop-menu ul li.dark-color a:link, .desktop-menu ul li.dark-color a:visited {
+		color: #0bad92;
+	}
+
+	.desktop-menu ul li.orange a:link, .desktop-menu ul li.orange a:visited {
+		color: #f3f0dd;
+	}
+
+	.desktop-menu ul li.turquoise a:link, .desktop-menu ul li.turqoise a:visited {
+		color: #d7d4ae;
+	}
+	/* End Navigation and Header */
+}
+/* End Min Width 800 Media Query */
