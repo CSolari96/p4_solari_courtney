@@ -5,10 +5,13 @@
 
 		<meta charset="utf-8">
 
-		<title>The Quarter Horse - The World's Most Versatile Horse</title>
+		<title>The Quarter Horse - Hall of Fame</title>
 
 		<!--Link Google Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet" />
+
+		<!--Link to CSS for Animate Modal Plugin-->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />
 
 		<!--Link CSS-->
 		<link type="text/css" rel="stylesheet" href="css/styles.css" />
@@ -42,49 +45,59 @@
 
 		<div id="panel">
 
-			<header>
+			<nav class="desktop-menu light-color">
 
-				<div class="mobile-header">
+				<ul>
 
-					<div class="light-color">
+					<li class="logo"><a href="index.html"><img src="images/logo.png" title="Horse Head Logo" alt="Horse Head Logo" /></a></li>
+					<li class="medium-color"><a href="index.html">Home</a></li>
+					<li class="dark-color"><a href="history.html">History</a></li>
+					<li class="orange"><a href="disciplines.html">Disciplines</a></li>
+					<li class="turquoise"><a href="halloffame.html">Hall of Fame</a></li>
 
-						<button class="toggle-button">&#9776;</button>
+				</ul>
+
+			</nav>
+
+			<div class="right site">
+
+				<header class="dark-color">
+
+					<div class="mobile-header">
+
+						<div class="light-color">
+
+							<button class="toggle-button">&#9776;</button>
+
+						</div>
+
+						<div class="medium-color"></div>
+
+						<div class="dark-color"></div>
+
+						<div class="orange"></div>
+
+						<div class="turquoise"></div>
 
 					</div>
 
-					<div class="medium-color"></div>
+					<img src="images/hof_banner.jpg" title="AQHA Hall of Fame" alt="AQHA Hall of Fame" id="banner-img" />
 
-					<div class="dark-color"></div>
+				</header>
 
-					<div class="orange"></div>
+				<main id="history" class="dark-color site-content">
 
-					<div class="turquoise"></div>
+					<section>
 
-				</div>
+						
 
-				<nav class="desktop-menu">
-
-					<ul>
-
-						<li class="logo"><a href="index.html"><img src="images/logo.png" title="Horse Head Logo" alt="Horse Head Logo" /></a></li>
-						<li class="medium-color"><a href="index.html">Home</a></li>
-						<li class="dark-color"><a href="history.html">History</a></li>
-						<li class="orange"><a href="disciplines.html">Disciplines</a></li>
-						<li class="turquoise"><a href="halloffame.html">Hall of Fame</a></li>
-
-					</ul>
-
-				</nav>
-
-			</header>
-
-			<div class="right">
-
-				<main>
+					</section>
 
 				</main>
 
-				<footer>
+				<footer class="turquoise">
+
+					<p>Copyright 2019 Courtney Solari</p>
 
 				</footer>
 
@@ -94,6 +107,9 @@
 
 		<!--Link to Slideout Menu Plugin-->
 		<script src="js/slideout.min.js"></script>
+
+		<!--Link to Simple Parallax Plugin-->
+		<script src="js/simpleParallax.js"></script>
 
 		<!--Link to main.js-->
 		<script src="js/main.js"></script>
