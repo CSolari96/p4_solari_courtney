@@ -42,47 +42,47 @@
 
 		<div id="panel">
 
-			<header>
+			<nav class="desktop-menu light-color">
 
-				<div class="mobile-header">
+				<ul>
 
-					<div class="light-color">
+					<li class="logo"><a href="index.html"><img src="images/logo.png" title="Horse Head Logo" alt="Horse Head Logo" /></a></li>
+					<li class="medium-color"><a href="index.html">Home</a></li>
+					<li class="dark-color"><a href="history.html">History</a></li>
+					<li class="orange"><a href="disciplines.html">Disciplines</a></li>
+					<li class="turquoise"><a href="halloffame.html">Hall of Fame</a></li>
 
-						<button class="toggle-button">&#9776;</button>
+				</ul>
 
-					</div>
-
-					<div class="medium-color"></div>
-
-					<div class="dark-color"></div>
-
-					<div class="orange"></div>
-
-					<div class="turquoise"></div>
-
-				</div>
-
-				<nav class="desktop-menu">
-
-					<ul>
-
-						<li class="logo"><a href="index.html"><img src="images/logo.png" title="Horse Head Logo" alt="Horse Head Logo" /></a></li>
-						<li class="medium-color"><a href="index.html">Home</a></li>
-						<li class="dark-color"><a href="history.html">History</a></li>
-						<li class="orange"><a href="disciplines.html">Disciplines</a></li>
-						<li class="turquoise"><a href="halloffame.html">Hall of Fame</a></li>
-
-					</ul>
-
-				</nav>
-
-			</header>
+			</nav>
 
 			<div class="right site">
 
-				<main id="home" class="dark-color site-content">
+				<header class="dark-color">
 
-					<img src="images/reining_header.jpg" title="Reining Horse" alt="Reining Horse" />
+					<div class="mobile-header">
+
+						<div class="light-color">
+
+							<button class="toggle-button">&#9776;</button>
+
+						</div>
+
+						<div class="medium-color"></div>
+
+						<div class="dark-color"></div>
+
+						<div class="orange"></div>
+
+						<div class="turquoise"></div>
+
+					</div>
+
+					<img src="images/reining_header.jpg" title="Reining Horse" alt="Reining Horse" id="banner-img" />
+
+				</header>
+
+				<main id="home" class="dark-color site-content">
 
 					<section>
 
@@ -113,8 +113,14 @@
 		<!--Link to Slideout Menu Plugin-->
 		<script src="js/slideout.min.js"></script>
 
+		<!--Link to Simple Parallax Plugin-->
+		<script src="js/simpleParallax.js"></script>
+
 		<!--Link to main.js-->
 		<script src="js/main.js"></script>
+
+		<!--Link to home.js-->
+		<script src="js/home.js"></script>
 
 	</body>
 

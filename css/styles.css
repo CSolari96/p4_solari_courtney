@@ -169,18 +169,20 @@ header {
 /* End Header */
 
 /* Home Page */
+#banner-img {
+	width: 100%;
+	display: block;
+}
+
 #home {
 	color: #f3f0dd;
+	padding: 2% 0;
+	z-index: 100;
 }
 
 #home h1 {
 	font-size: 3rem;
 	text-align: center;
-}
-
-#home img {
-	width: 100%;
-	margin-bottom: 1.5%;
 }
 
 #home section {
@@ -212,7 +214,7 @@ header {
 
 /* Min-Width 800px Media Query */
 @media (min-width: 800px) {
-	/* Navigation and Header */
+	/* Navigation */
 	.mobile-header {
 		display: none;
 	}
@@ -221,7 +223,8 @@ header {
 		display: none;
 	}
 
-	header {
+	.desktop-menu {
+		display: block;
 		height: 100%;
 		width: 20%;
 		position: fixed;
@@ -229,10 +232,6 @@ header {
 		left: 0;
 		bottom: 0;
 		z-index: 1;
-	}
-
-	.desktop-menu {
-		display: block;
 	}
 
 	.desktop-menu img {
@@ -284,7 +283,7 @@ header {
 	.desktop-menu ul li.turquoise a:link, .desktop-menu ul li.turqoise a:visited {
 		color: #d7d4ae;
 	}
-	/* End Navigation and Header */
+	/* End Navigation */
 
 	/* Primary Content */
 	.right {
