@@ -12,6 +12,15 @@
 	border: 0;
 }
 
+::selection {
+	background: #f44237;
+	color: #f3f0dd;
+}
+
+:focus {
+	outline: none;
+}
+
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
@@ -71,6 +80,14 @@ header {
 
 .turquoise {
 	background-color: #0bad92;
+}
+
+.toggle-button {
+	width: 100%;
+	font-size: 2rem;
+	margin: auto 0;
+	background-color: #f3f0dd;
+	color: #0bad92;
 }
 /* End Mobile Header */
 
