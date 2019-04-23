@@ -209,7 +209,7 @@ main section p, main aside p {
 /* End Home Page */
 
 /* History Page */
-#history h2 {
+#history h2, #conformation h2 {
 	color: #0bad92;
 	padding: 1%;
 }
@@ -235,9 +235,55 @@ main section p, main aside p {
 }
 /* End History Page */
 
-/* Disciplines Page */
+/* Conformation Page */
+#conformation section:last-of-type {
+	text-align: center;
+}
 
-/* End Disciplines Page */
+#judging-game div {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: auto;
+	justify-content: center;
+}
+
+#judging-game figure{
+	flex-basis: 95%;
+	margin: 2.5%;
+	max-width: 300px;
+}
+
+#judging-game img {
+	width: 100%;
+	max-width: 300px;
+}
+
+#judging-game select {
+	display: inline-block;
+	width: 45%;
+	font-family: "Monda", sans-serif;
+	font-weight: 700;
+	color: #36352A;
+	padding: 2%;
+	font-size: 1rem;
+	margin: 0.5%;
+}
+
+#check {
+	color: #f3f0dd;
+	font-family: "Monda", sans-serif;
+	font-weight: 700;
+	width: 50%;
+	margin: 1%;
+}
+
+#check:hover {
+	border: 4px solid #f44237;
+	background-color: #f3f0dd;
+	color: #0bad92;
+}
+/* End Conformation Page */
 
 /* Hall of Fame Page*/
 #hof-gallery {
@@ -321,6 +367,15 @@ main section p, main aside p {
 		width: 40%;
 		float: left;
 		margin: 2% 2% 2% 0;
+	}
+
+	#judging-game {
+		width: 80%;
+		margin: auto;
+	}
+
+	#judging-game figure{
+		flex-basis: 45%;
 	}
 
 	#hof-gallery figure {
@@ -409,6 +464,14 @@ main section p, main aside p {
 
 	.modal-content {
 		padding: 5% 20%;
+	}
+
+	#judging-game select {
+		width: 50%;
+	}
+
+	#check {
+		width: 30%;
 	}
 }
 /* End Min Width 800 Media Query */

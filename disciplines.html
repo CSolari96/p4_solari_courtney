@@ -82,7 +82,7 @@
 
 				</header>
 
-				<main id="home" class="light-color site-content">
+				<main id="conformation" class="light-color site-content">
 
 					<section>
 
@@ -102,7 +102,97 @@
 
 						<h2>Try Your Hand at Judging!</h2>
 
-						<p>Using the dropdown menu, select the order you think the 4 horses below should be ranked!</p>
+						<p>Using the dropdown menu, select the order you think the 4 horses below should be ranked based on the information provided above!</p>
+
+						<div id="judging-game">
+
+							<div>
+
+								<figure>
+
+									<img src="images/horse1.jpg" title="Horse 1" alt="Horse 1" />
+
+								</figure>
+
+								<figure>
+									
+									<img src="images/horse2.jpg" title="Horse 2" alt="Horse 2" />
+
+								</figure>
+
+								<figure>
+									
+									<img src="images/horse3.jpg" title="Horse 3" alt="Horse 3" />
+
+								</figure>
+
+								<figure>
+
+									<img src="images/horse4.jpg" title="Horse 4" alt="Horse 4" />
+
+								</figure>
+
+							</div>
+
+							<div id="answer-form">
+
+								<select id="selection-menu" name="placing" class="medium-color">
+
+									<option value="1234">1-2-3-4</option>
+
+									<option value="1243">1-2-4-3</option>
+
+									<option value="1324">1-3-2-4</option>
+
+									<option value="1342">1-3-4-2</option>
+
+									<option value="1423">1-4-2-3</option>
+
+									<option value="1432">1-4-3-2</option>
+
+									<option value="2134">2-1-3-4</option>
+
+									<option value="2143">2-1-4-3</option>
+
+									<option value="2314">2-3-1-4</option>
+
+									<option value="2341">2-3-4-1</option>
+
+									<option value="2413">2-4-1-3</option>
+
+									<option value="2431">2-4-3-1</option>
+
+									<option value="3124">3-1-2-3</option>
+
+									<option value="3142">3-1-4-2</option>
+
+									<option value="3214">3-2-1-4</option>
+
+									<option value="3241">3-2-4-1</option>
+
+									<option value="3412">3-4-1-2</option>
+
+									<option value="3421">3-4-2-1</option>
+
+									<option value="4123">4-1-2-3</option>
+
+									<option value="4132">4-1-3-2</option>
+
+									<option value="4213">4-2-1-3</option>
+
+									<option value="4231">4-2-3-1</option>
+
+									<option value="4312">4-3-1-2</option>
+
+									<option value="4321">4-3-2-1</option>
+
+								</select>
+
+								<button id="check" class="orange">Check Answer!</button>
+
+							</div>
+
+						</div>
 
 					</section>
 
@@ -126,6 +216,9 @@
 
 		<!--Link to main.js-->
 		<script src="js/main.js"></script>
+
+		<!--Link to conformation.js-->
+		<script src="js/conformation.js"></script>
 
 	</body>
 
