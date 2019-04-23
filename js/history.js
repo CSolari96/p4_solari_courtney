@@ -13,7 +13,7 @@ changePhoto();
 function changePhoto() {
 
   var imageSrc = photos[imageNum];
-  placeholder.src=imageSrc;
+  placeholder.setAttribute("src", imageSrc);
   imageNum++;
   if (imageNum > 4) {
     imageNum = 0;
