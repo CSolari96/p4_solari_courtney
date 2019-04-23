@@ -407,7 +407,7 @@ footer a:hover, footer a:active {
 		margin: 2%;
 	}
 
-	#slide-placeholder {
+	#history section img:first-of-type {
 		width: 50%;
 		float: right;
 		margin: 2%;
@@ -496,14 +496,9 @@ footer a:hover, footer a:active {
 		flex-grow: 1;
 		flex-basis: 120px;
 		margin: 5% 0;
-		padding-left: 15%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}
-
-	.desktop-menu ul li.logo {
-		padding-left: 0;
 	}
 
 	.desktop-menu ul li a:link, .desktop-menu ul li a:visited {
@@ -511,6 +506,10 @@ footer a:hover, footer a:active {
 		text-decoration: none;
 		font-weight: 700;
 		width: 100%;
+	}
+
+	.desktop-menu ul li.animate a:link, .desktop-menu ul li.animate a:visited {
+		padding-left: 10%;
 	}
 
 	.desktop-menu ul li.medium-color a:link, .desktop-menu ul li.medium-color a:visited {
@@ -527,6 +526,17 @@ footer a:hover, footer a:active {
 
 	.desktop-menu ul li.turquoise a:link, .desktop-menu ul li.turquoise a:visited {
 		color: #d7d4ae;
+	}
+
+	/* Nav Animation */
+	.animate {
+		width: 100%;
+    	transition: .5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+	}
+
+	.animate:hover {
+		width: 75%;
+		font-size: 0.75rem;
 	}
 	/* End Navigation */
 
