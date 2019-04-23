@@ -161,7 +161,7 @@ header {
 	color: #f3f0dd;
 }
 
-#menu ul li.turquoise a:link, #menu ul li.turqoise a:visited {
+#menu ul li.turquoise a:link, #menu ul li.turquoise a:visited {
 	color: #d7d4ae;
 }
 /* End Hamburger Menu */
@@ -179,16 +179,27 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+main {
+	padding: 2% 0;
+}
+
 main section {
 	width: 80%;
 	margin: auto;
 }
 
+main section p {
+	padding: 1% 0;
+}
+
 /* Home Page */
 #home {
 	color: #f3f0dd;
-	padding: 2% 0;
-	z-index: 100;
 }
 
 #home section img {
@@ -196,10 +207,6 @@ main section {
 	display: block;
 	margin: 2% auto;
 	max-width: 450px;
-}
-
-#home section p {
-	padding: 1% 0;
 }
 /* End Home Page */
 
@@ -212,13 +219,72 @@ main section {
 /* End Disciplines Page */
 
 /* Hall of Fame Page*/
+#hof {
+	color: #36352A;
+}
+
+#hof h1 {
+	color: #f44237;
+}
+
 #hof-gallery {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#hof-gallery figure {
+	flex-basis: 48%;
+	margin: 0.5%;
 }
 
 #hof-gallery img {
+	width: 100%;
 	max-width: 310px;
+	display: block;
+	margin: auto;
+}
+
+.container {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	background-color: #f44237;
+	overflow: hidden;
+	width: 0;
+	height: 20%;
+	color: #f3f0dd;
+	transition: .5s ease;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.container:hover .overlay {
+	width: 75%;
+	left: 25%;
+}
+
+.modal-content {
+	padding: 5%;
+	color: #f3f0dd;
+}
+
+.modal-content img {
+	width: 100%;
+	max-width: 600px;
+	display: block;
+	margin: auto;
+	padding: 1% 0;
+}
+
+.modal-content p {
+	max-width: 850px;
+	margin: auto;
+	padding: 1% 0;
 }
 
 /* End Hall of Fame Page*/
@@ -230,6 +296,10 @@ main section {
 		width: 45%;
 		float: left;
 		margin: 2%;
+	}
+
+	#hof-gallery figure {
+		flex-basis: 30%;
 	}
 }
 /* End Min-Width 650px Media Query */
@@ -302,7 +372,7 @@ main section {
 		color: #f3f0dd;
 	}
 
-	.desktop-menu ul li.turquoise a:link, .desktop-menu ul li.turqoise a:visited {
+	.desktop-menu ul li.turquoise a:link, .desktop-menu ul li.turquoise a:visited {
 		color: #d7d4ae;
 	}
 	/* End Navigation */
@@ -311,5 +381,19 @@ main section {
 	.right {
 		padding-left: 20%;
 	}
+
+	.modal-content {
+		padding: 5% 20%;
+	}
 }
 /* End Min Width 800 Media Query */
+
+/* Min Width 1000 Media Query */
+@media (min-width: 1000px) {
+
+	#hof-gallery figure {
+		flex-basis: 21%
+	}
+
+}
+/* End Min Width 1000 Media Query */
