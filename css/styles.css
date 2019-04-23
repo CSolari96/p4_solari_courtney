@@ -416,6 +416,87 @@ footer a:hover, footer a:active {
 }
 /* End Footer */
 
+/* Image Load Animations */
+@keyframes fade {
+	from { opacity: 0; } to { opacity: 1; }
+}
+
+.fadeIn {
+	opacity: 0;
+	-webkit-animation: fade ease-in 1;
+	-moz-animation: fade ease-in 1;
+	animation: fade ease-in 1;
+
+	-wekbit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 0.4s;
+	-moz-animation-duration: 0.4s;
+	animation-duration: 0.4s;
+}
+
+.fadeIn.one {
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.fadeIn.two {
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+
+.fadeIn.three {
+	-webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+
+.fadeIn.four {
+	-webkit-animation-delay: 1.0s;
+	-moz-animation-delay: 1.0s;
+	animation-delay: 1.0s;
+}
+
+.fadeIn.five {
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+
+.fadeIn.six {
+	-webkit-animation-delay: 1.4s;
+	-moz-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+}
+
+.fadeIn.seven {
+	-webkit-animation-delay: 1.6s;
+	-moz-animation-delay: 1.6s;
+	animation-delay: 1.6s;
+}
+
+.fadeIn.eight {
+	-webkit-animation-delay: 1.8s;
+	-moz-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+
+.fadeIn.nine {
+	-webkit-animation-delay: 2.0s;
+	-moz-animation-delay: 2.0s;
+	animation-delay: 2.0s;
+}
+
+.fadeIn.ten {
+	-webkit-animation-delay: 2.2s;
+	-moz-animation-delay: 2.2s;
+	animation-delay: 2.2s;
+}
+/* End Image Load Animations */
+
 /* Min-Width 650px Media Query */
 @media (min-width: 650px) {
 	#home section img {
